@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FINAL BT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/00316bb995.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/00316bb995.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap"
+          rel="stylesheet">
+          <script src="akademii.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light  d-flex justify-content-around">
+    <div class="navbar-text d-flex justify-content-left justify-content-lg-center align-items-start pt-4">
+        <img src="images/logo.png" class="logo mx-2">
+        <p class="mt-1 first-section"><span class="bold-1">Creative Hub</span> | <span
+                class="color">Successful careers</span> <span class="bold-2">made possible.</span>
+        </p>
+    </div>
+    <div class="navbar-nav navbar-brand">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index-7.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="akademii.html" class="nav-link">Academis</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn nav-link" data-toggle="modal" data-target="#registerModal">
+                        Register
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn nav-link" data-toggle="modal" data-target="#loginModal">
+                        Login
+                    </button>
+                </li>
+
+                <li class="cart">
+                    <button id="cartBtn" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+
+                            <i class="fa-solid fa-cart-shopping"></i><span id="cartNumber">0</span>
+                        </button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="registerForm">
+                <label for="uname"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="uname">
+                <p class="error-text" id="uname-error"></p>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw">
+                <p class="error-text" id="psw-error"></p>
+
+                <button type="button" id="registerBtn" class="btn btn-primary">Register</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="loginForm">
+                <label for="name"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="name">
+                <p class="error-text" id="name-error2"></p>
+
+                <label for="psw-2"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw-2">
+                <p class="error-text" id="psw-error2"></p>
+
+                <button type="button" id="loginBtn" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row" id="content-section-one">
+        <div class="col-lg-12 col-sm-12 img-center mb-5">
+            <div class="row">
+                <div class="col-6 hero d-flex justify-content-left justify-content-lg-center align-items-start pt-4">
+
+                </div>
+
+                <div class="col-6 hero-2">
+
+                </div>
+
+                <div class="col-lg-6 offset-lg-3 text-center d-flex justify-content-center position-absolute">
+                    <img src="images/circle.png" class="d-none d-lg-block"/>
+                </div>
+
+                <div class="col-lg-8 offset-lg-2 text-center text-white position-absolute">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 color-one">
+                            <h2 class="bold-3">Дали си подготвен за jump start во твојата кариера?</h2>
+                            <h1 class="text-center my-4 bold-4">ПОЧНУВАМЕ!</h1>
+                            <i class="fa-solid fa-circle-arrow-down fa-4x icon d-none d-lg-block"></i>
+                            <i class="fa-solid fa-circle-arrow-down fa-2x icon d-block d-lg-none"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FIRST SECTION CODE  -->
+
+    <!-- SECOND SECTION CODE  -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h4 class="text-center p-0 py-lg-5 header-1">Бесплатни настани</h4>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="row">
+                        <div class="col-lg-4 mb-3 mb-lg-0">
+                            <div class="card">
+                                <img class="card-img-top" src="images/card1.png" class="w-100 img-fluid">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
+                                    <p class="card-text text-bold-1 text-white">Дознај дали оваа професија е за
+                                        тебе!</p>
+                                    <h4 class="card-title text-bold-2 text-white">Изгради ја твојата прва веб
+                                        страна</h4>
+                                    <button class="btn btn-primary button-1">Пријави се</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 mb-lg-0">
+                            <div class="card">
+                                <img class="card-img-top" src="images/card2.png" class="w-100 img-fluid">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
+                                    <p class="card-text text-bold-1 text-white">Воведен курс во графички дизајн</p>
+                                    <h4 class="card-title text-bold-2 text-white">Нацртај го твоето прво лого</h4>
+                                    <button class="btn btn-primary button-1">Пријави се</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-3 mb-lg-0">
+                            <div class="card">
+                                <img class="card-img-top" src="images/card3.png" class="w-100 img-fluid">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
+                                    <p class="card-text text-bold-1 text-white">Дознај се за оваа професија</p>
+                                    <h4 class="card-title text-bold-2 text-white">Вовед во дигитален маркетинг</h4>
+                                    <button class="btn btn-primary button-1">Пријави се</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 text-center py-5">
+                            <button class="btn btn-primary button-2">Види ги сите настани</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECOND SECTION CODE -->
+
+    <!-- THIRD SECTION CODE -->
+
+    <div class="row" id="content-section-third">
+        <div class="col-lg-12 hero-3 d-none d-lg-block mt-5">
+            <div class="row">
+                <div class="col-4 offset-lg-8 position-absolute">
+                    <h4 class="text-bold-3 text-white">Нашата заедница</h4>
+                    <p class="text-font text-white">Основани во 2017 година, во Скопје, а денес со канцеларии во
+                        Приштина и Мајами, на над 5000 студенти сме им помогнале да променат или да започнат кариера во
+                        фронт-енд програмирање, графички дизајн, дигитален маркетинг, бекенд програмирање, човечки
+                        ресурси, data science, data analytics, UX/UI.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 d-block d-lg-none hero-3-2">
+            <div class="row">
+                <div class="col-12 p-4">
+                    <h4 class="text-bold-3 text-white">Нашата заедница</h4>
+                    <p class="text-font text-white">Основани во 2017 година, во Скопје, а денес со канцеларии во
+                        Приштина и Мајами, на над 5000 студенти сме им помогнале да променат или да започнат кариера во
+                        фронт-енд програмирање, графички дизајн, дигитален маркетинг, бекенд програмирање, човечки
+                        ресурси, data science, data analytics, UX/UI.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THIRD SECTION CODE -->
+
+    <!-- FOUR SECTION CODE -->
+
+    <div class="row">
+        <div class="col-lg-12 hero-4 py-lg-5 py-0">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 py-5">
+                    <p>Стипендии</p>
+                    <h3 class="text-bold-4">Реши го предизвикот и освој делумна стипендија!</h3>
+                    <p class="pt-lg-0 pt-3">Избери предизвик за Академијата за која сакаш да се запишеш! Ќе имаш 7 дена
+                        да го решиш и да ни го испратиш, а ние ќе те контактираме за те известиме дали си добил делумна
+                        стипендија на Академијата која си ја избрал.</p>
+                    <p class="text-bold-6">* Делумните стипендии се во вредност од 100 до 500 ЕУР.</p>
+                    <div class="row">
+                        <div class="col-lg-6 my-lg-0 my-2">
+                            <div class="card">
+                                <img class="card-img-top w-100 img-fluid d-none d-lg-block" src="images/card5.png">
+                                <img class="card-img-top w-100 img-fluid d-block d-lg-none"
+                                     src="images/card-mobile-1.png">
+
+                                <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
+                                    <p class="card-text text-bold-1 text-white">Предизвик за идни UX/UI дизајнери</p>
+                                    <h4 class="card-title text-bold-2 text-white pb-3">Мапа за велосипедисти</h4>
+                                    <button class="btn btn-primary button-1">Аплицирај тука!</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 my-lg-0 my-2">
+                            <div class="card">
+                                <img class="card-img-top w-100 img-fluid d-none d-lg-block" src="images/card4.png">
+                                <img class="card-img-top w-100 img-fluid d-block d-lg-none"
+                                     src="images/card-mobile-2.png">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end align-items-start">
+                                    <p class="card-text text-bold-1 text-white">Предизвик за идни фронт-енд
+                                        девелопери</p>
+                                    <h4 class="card-title text-bold-2 text-white pb-3">Лендинг страна по даден
+                                        темплејт</h4>
+                                    <button class="btn btn-primary button-1">Аплицирај тука!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOUR SECTION CODE -->
+
+    <!-- FIFTH SECTION CODE -->
+
+
+    <div class="row">
+        <div class="col-lg-12 hero-5 d-flex justify-content-center align-items-center">
+            <img class="img-fluid pt-5 pb-4 picture-1 d-none d-lg-block" src="images/circle-2.png">
+            <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-lg-4 offset-lg-4 text-white text-center d-flex flex-column">
+                        <h2 class="pt-2 pb-2 text-bold-4">Дали сакаш да си во тек со сите новости, попусти, ваучери и
+                            настани кои ги нудиме?</h2>
+                        <p class="mb-4 text-bold-6">Регистрирај се и стани дел од нашата заедница</p>
+
+                        <form class="d-flex flex-column">
+
+                            <div class="form-group">
+                                <input class="form-control borders border border-primary" type="text"
+                                       placeholder="Име и Презиме">
+                            </div>
+
+                            <select id="options" class="form-group borders font-weight-bold text-dark px-3 py-2">
+                                <option value="Избери поле од интерес">Избери поле од интерес</option>
+                                <option value="Дигитален маркетинг">Дигитален маркетинг</option>
+                                <option value="Фронт-енд програмирање">Фронт-енд програмирање</option>
+                                <option value="Графички дизајн">Графички дизајн</option>
+                                <option value="UX/UI дизајн">UX/UI дизајн</option>
+                                <option value="Графички дизајн">Графички дизајн</option>
+                                <option value="Човечки ресурси">Човечки ресурси</option>
+                                <option value="Бекенд програмирање">Бекенд програмирање</option>
+                                <option value="Лидерство и менаџмент">Лидерство и менаџмент</option>
+                            </select>
+
+                            <div class="form-group">
+                                <input class="form-control borders border border-primary" type="email"
+                                       placeholder="е-пошта">
+                            </div>
+                            <button class="btn btn-primary borders font-weight-bold px-4 mt-3 ">Испрати</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIFTH SECTION CODE -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalLabel">Your shopping cart</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                       <span aria-hidden="true">&times;</span>
+                   </button>
+               </div>
+               <div class="modal-body" id="cart-items-modal"></div>
+           </div>
+   
+       </div>
+   </div>
+<div class="row">
+    <div class="col-lg-8 offset-lg-2">
+        <div class="card-body card-academy1 init-academy">
+            <img class="card-img-top-two" src="https://creativehubkos.com/assets/home/graphic-card.png" alt="Card image cap">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <p class="card-text"></p>
+            <p class="card-text"></p>
+            <button class="btn btn-primary add-cart" data-id="cartBtn">Add to cart</button>
+        </div>
+
+    </div>
+</div>
+  
+        
+   
+
+    <!-- SIXTH SECTION CODE -->
+
+
+    <div class="row" id="sixth-section">
+        <div class="col-lg-10 offset-lg-1 text-center">
+            <h2 class="text-bold-7 mt-0 mt-lg-5 ">Успехот на програмите на Creative Hub се состои од 4 елементи кои ги
+                имаме во секоја Академија</h2>
+            <div class="row">
+                <div class="position-absolute">
+                    <div class="row justify-content-center m-0">
+                        <div class="col-10 offset-col-1">
+                            <div class="row">
+
+                                <div class="card border-0 bg-transparent rounded-0 col-lg-3 px-1 mb-3">
+                                    <div class="card-body programs py-5 mx-1">
+                                        <h3 class="card-title text-bold-6 text-size-2 py-0 py-lg-2">Претстави се
+                                            професионално</h3>
+                                        <p class="card-text pb-2">Започнуваме со обука за градење на личен бренд !</p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 bg-transparent rounded-0 col-lg-3 px-1 mb-3">
+                                    <div class="card-body programs py-5 mx-1">
+                                        <h3 class="card-title text-bold-6 text-size-2 py-0 py-lg-2">Стекнување
+                                            вештини</h3>
+                                        <p class="card-text pb-2">Предавања со експерти од област !</p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 bg-transparent rounded-0 col-lg-3 px-1 mb-3">
+                                    <div class="card-body programs py-5 mx-1">
+                                        <h3 class="card-title text-bold-6 text-size-2 py-0 py-lg-2">Стекнување
+                                            самодоверба</h3>
+                                        <p class="card-text pb-2">Работа на реални проекти + Визитинг предавања +
+                                            Мастеркласи !</p>
+                                    </div>
+                                </div>
+
+                                <div class="card border-0 bg-transparent rounded-0 col-lg-3  px-1 mb-3">
+                                    <div class="card-body programs py-5 mx-1">
+                                        <h3 class="card-title text-bold-6 text-size-2 py-0 py-lg-2">Партнер за
+                                            вработување</h3>
+                                        <p class="card-text pb-2">Обука за Вработување и 2 пати месечно следење на
+                                            прогрес се додека не се вработиш !</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ellipse col-6 col-lg-12 p-0">
+            <img src="images/ellipse.png" class="w-100 img-fluid d-none d-lg-block">
+            <img src="images/ellipse.png" class="d-block d-lg-none">
+        </div>
+
+    </div>
+
+</div>
+<!-- SIXTH SECTION CODE -->
+
+<!-- CAROUSEL SECTION -->
+
+
+<div class="container-fluid mb-5 carousel-section">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="text-bold-7 mt-5">Избери некоја од академиите</h2>
+        </div>
+
+
+        <div id="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active bg-color text-white">
+                        <img class="card-img-top" src="images/carousel.png" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Фронт-енд Академија</h1>
+                            <h2 class="card-text text-bold-4">Најбрзорастечка професија во Македонија е ИТ индустријата.
+                                Идеален избор за оние кои за 9 месеци се гледаат како фронт-енд програмери.</h2>
+                            <h2 class="text-bold-4">Веб страната што ја гледате е искодирана од студенти на Фронт-енд
+                                Академијата како првиот реален проект - статичка веб страна.</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bg-color text-white">
+                        <img class="card-img-top" src="images/Coming-soon.jpg" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Бекенд Академија</h1>
+                            <h2 class="card-text text-bold-4">Доколку веќе имате познавања од фронт-енд програмирање,
+                                време е да ги доусовршите и во бекенд делот. Идеална за лица кои сакаат да градат добро
+                                платена кариера во ИТ и да уживаат бенефиции на работа со флексибилно работно време, и
+                                работа од дома.</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bg-color text-white">
+                        <img class="card-img-top" src="images/nastan.jpg" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Академија за човечки ресурси</h1>
+                            <h2 class="card-text text-bold-4">Одличен избор за лица кои отсекогаш се сметале за добри
+                                комуникатори, за оние кои имаат пасија за тренинг и развој на човечки ресурси во
+                                компанијата, но и за оние кои сакаат да работат како регрутери или пак HR менаџери.</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bg-color text-white">
+                        <img class="card-img-top" src="images/samit.jpg" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Академија за дигитален маркетинг</h1>
+                            <h2 class="card-text text-bold-4">Најкреативната и динамична професија за лица кои имаат
+                                пасија да научат како да заработуваат добро преку користење на социјалните медиуми како
+                                алатки за рекламирање. Академија со 7 практични проекти, мастеркласи, визитинг предавања
+                                и работилници во живо.</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bg-color text-white">
+                        <img class="card-img-top" src="images/izlozba.jpg" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Академија за графички дизајн</h1>
+                            <h2 class="card-text text-bold-4">Ако отсекогаш сте сакале да цртате, да креирате, да
+                                визуелизирате и да ги преточите вашите мисли во дизајн решение, ова е Академијата за
+                                Вас. 7 месечна програма на која ќе дипломирате со дизајн портфолио кое ќе ви овозможи да
+                                започнете фриленс кариера или пак да се вработите како графички дизајнер.</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bg-color text-white">
+                        <img class="card-img-top" src="images/studenti.jpg" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Академија за UX UI</h1>
+                            <h2 class="card-text text-bold-4">Ако сакате да го споите креативното со стратегија, тогаш
+                                ова е Академијата за Вас. Ќе дизајнирате веб страни и веб апликации и вашата главна цел
+                                е да овозможите одлично искуство за корисникот. Една од најбараните професии во
+                                светот.</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bg-color text-white">
+                        <img class="card-img-top" src="images/Coming-soon.jpg" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Inspiring Leadership & Management Program</h1>
+                            <h2 class="card-text text-bold-4">Академија за лица кои сакаат на стекнат вештини во
+                                раководење на други лица. Коучинг, развивање на лидери, Лидерство 5 се само дел од
+                                предметите на оваа Академија која се базира на основи на учења од Harvard Business
+                                Review.</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item bg-color text-white">
+                        <img class="card-img-top" src="images/carousel.png" alt="Card image">
+                        <div class="card-body text-left py-3 py-lg-5">
+                            <h1 class="card-title text-bold-8 pb-3">Фронт-енд Академија</h1>
+                            <h2 class="card-text text-bold-4">Најбрзорастечка професија во Македонија е ИТ индустријата.
+                                Идеален избор за оние кои за 9 месеци се гледаат како фронт-енд програмери.
+                                Веб страната што ја гледате е искодирана од студенти на Фронт-енд Академијата како
+                                првиот реален проект - статичка веб страна.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- CAROUSEL END CODE  -->
+
+<!-- FOOTER CODE -->
+
+<div class="bg-color py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 justify-content-between">
+                <img src="images/Logo-2.png" class="img-fluid logo-2">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer-section-1 text-white">
+                            <h5 class="text-bold-4 py-4">Creative Hub</h5>
+                            <p class="font-weight-lighter pt-1">Successful Careers Made Possible</p>
+
+                            <a href="#"><i class="fa-brands fa-facebook fa-2x icons"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram fa-2x px-4 icons"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter fa-2x px-3 icons"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin fa-2x px-3 icons"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok fa-2x px-3 icons"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube fa-2x px-3 icons"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-section-2 text-white">
+                            <h5 class="text-bold-4 py-4">Контакт</h5>
+                            <div class="icons-2 d-flex">
+                                <i class="fa-solid fa-envelope fa-2x"></i>
+                                <p class="px-2 py-1">contact@creativehub.mk</p>
+                            </div>
+
+                            <div class="icons-2 d-flex">
+                                <i class="fa-solid fa-phone fa-2x"></i>
+                                <p class="px-2 py-2">071 214 849</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="footer-section-3 text-white">
+                            <h5 class="text-bold-4 py-0 py-lg-4">Види повеќе</h5>
+                            <a href="#" class="nav-link text-white text-white px-0">Настани</a>
+                            <a href="#" class="nav-link text-white px-0">Стипендии</a>
+                            <a href="#" class="nav-link text-white px-0">Академии</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="footer-section-4 text-center text-white pt-5">
+                            <p>The UX UI Design was made by our students Aleksandra Aleksova, Aleksandra Perkova and
+                                Blagoja Risteski</p>
+                            <p>The front-end development was made by our students at the Front-end Academy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER CODE ENDS HERE -->
+
+<script src="index.js"></script>
+
+
+<!-------------------------------------------CODE ENDS HERE--------------------------------------------------->
+
+
+</body>
+</html>
